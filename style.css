@@ -7,6 +7,7 @@
 #header {
     height: 100px;
     padding: 10px 0;
+    border: 1px solid green;
 }
 
 #brand h1 a{
@@ -49,4 +50,43 @@
 
 .clear {
     clear: both;
+}
+
+#navBar {
+    border: 1px solid red;
+    height: 70px;
+    padding: 7px 0;
+    background: -moz-linear-gradient(#F8F594, #D5D533);
+    background: -o-linear-gradient(#F8F594, #D5D533);
+    background: -webkit-transition(#F8F594, #D5D533);
+    background: linear-gradient(#F8F594, #D5D533);
+}
+
+#navBar ul {
+    list-style: none;
+}
+#navBar ul li {
+    float: left;
+    border-right: 1px solid slateblue;
+    padding: 0 30px;
+    height: 30px;
+}
+#navBar ul li:last-child {
+    border: none
+}
+#navBar ul li a {
+    font-size: 17px;
+    text-decoration: none;
+    color: slateblue;
+    line-height: 30px;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+#navBar ul li a:hover, #navBar ul li a.active {
+    font-size: 20px;
+    font-weight: bold;
+    color: slateblue;
 }
