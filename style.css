@@ -2,12 +2,51 @@
     width: 1050px;
     border: 1px solid blue;
     margin: 0 auto;
+}
+
+#header {
     height: 100px;
+    padding: 10px 0;
 }
 
 #brand h1 a{
     font-size: 50px;
     font-weight: 100;
-    color: orange;
+    color: SlateBlue;
     text-decoration: none;
+}
+#brand {
+    float: left;
+}
+#searchBox {
+    float: right;
+    background: -moz-linear-gradient(rgb(186, 233, 155), rgb(124, 235, 50));
+    width: 400px;
+    height: 50px;
+    padding: 15px 20px 0px 20px; 
+    margin-top: 20px;
+    
+}
+.submit {
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 15px;
+    background: slateblue;
+    color: white;
+}
+.text {
+    float: left;
+    color: slateblue;
+    font-size: 15px;
+    padding: 5px;
+    width: 200px;
+    background: white url(img/search.jpg);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: right center;
+}
+
+.clear {
+    clear: both;
 }
