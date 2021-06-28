@@ -90,3 +90,22 @@
     font-weight: bold;
     color: slateblue;
 }
+#intro {
+    border: 1px solid blue;
+    margin: 16px 0;
+    padding: 30px;
+    background: linear-gradient(#E5F2BB, #B7E952); 
+    background: -webkit-linear-gradient(#E5F2BB, #B7E952); 
+    background: -o-linear-gradient(#E5F2BB, #B7E952); 
+    background: -moz-linear-gradient(#E5F2BB, #B7E952); 
+}
+#intro h3 {
+    color: #316901;
+    font-size: 45px;
+    font-weight: normal;
+}
+#intro p {
+    font-size: 25px; 
+    color: #628F19;
+    text-align: justify;
+}
