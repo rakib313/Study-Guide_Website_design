@@ -123,6 +123,7 @@
     border-radius: 20px;
     width: 450px;
     height: 500px;
+    float: left;
 }
 #leftSidebar h3 {
     color: slateblue;
@@ -131,12 +132,10 @@
 #leftSidebar ul {
     list-style-type: none;
     padding-top: 8px;
-    padding-left: 40px;
 }
 #leftSidebar ul li {
     list-style-image: url(img/arrow.png);
-    padding-top: 4px;
-    padding-left: 10px;
+    padding: 4px 0 4px 10px;
 }
 #leftSidebar ul li a{
     font-size: 20px;
@@ -154,5 +153,49 @@
     font-weight: bold;
 }
 
+
+
 /* Right sidebar */
 
+#rightSidebar {
+    border: 1px solid #BAF46F;
+    padding: 10px 30px;
+    border-radius: 20px;
+    width: 450px;
+    height: 500px;
+    float: right;
+}
+
+#rightSidebar h3 {
+    color: slateblue;
+    font-size: 30px;
+}
+
+#rightSidebar ul {
+    list-style-type: none;
+    padding-top: 8px;
+    padding-left: 40px;
+}
+
+#rightSidebar ul li {
+    padding: 17px 0 17px 70px;
+    background: url(img/tick.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+#rightSidebar ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    padding-bottom: 4px;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+#rightSidebar ul li a:hover, #leftSidebar ul li a.active {
+    color: slateblue;
+    font-size: 24px;
+    font-weight: bold;
+}
