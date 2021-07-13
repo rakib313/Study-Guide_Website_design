@@ -1,6 +1,6 @@
 #container {
     width: 1050px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 0 auto;
 }
 
@@ -9,7 +9,7 @@
 #header {
     height: 100px;
     padding: 10px 0;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 #brand h1 a{
@@ -55,7 +55,7 @@
 }
 
 #navBar {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 70px;
     padding: 7px 0;
     background: -moz-linear-gradient(#F8F594, #D5D533);
@@ -96,7 +96,7 @@
 /* Introduction */
 
 #intro {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 16px 0;
     padding: 30px;
     background: linear-gradient(#E5F2BB, #B7E952); 
@@ -151,6 +151,12 @@
     color: slateblue;
     font-size: 24px;
     font-weight: bold;
+}
+.footer {
+    background: linear-gradient(#F6F390, #D5D533);
+    margin-top: 15px;
+    height: 60px;
+    padding: 10px 30px;
 }
 
 
