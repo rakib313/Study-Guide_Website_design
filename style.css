@@ -1,15 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #container {
-    width: 1050px;
+    width: 90%;
     /* border: 1px solid blue; */
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 /* Header */
 
 #header {
-    height: 100px;
+    /* height: 100px; */
     padding: 10px 0;
     /* border: 1px solid green; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #brand h1 a{
@@ -19,16 +32,22 @@
     text-decoration: none;
 }
 #brand {
-    float: left;
+    /* float: left; */
+    flex: 50%;
+    /* min-width: 400px; */
 }
 #searchBox {
-    float: right;
+    /* float: right; */
+    flex: 1;
     background: -moz-linear-gradient(rgb(186, 233, 155), rgb(124, 235, 50));
-    width: 400px;
-    height: 50px;
-    padding: 15px 20px 0px 20px; 
-    margin-top: 20px;
-    
+    background: -webkit-linear-gradient(rgb(186, 233, 155), rgb(124, 235, 50));
+    min-width: 400px;
+    /* height: 50px; */
+    padding: 20px; 
+    /* margin-top: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .submit {
     float: right;
@@ -56,27 +75,29 @@
 
 #navBar {
     /* border: 1px solid red; */
-    height: 70px;
-    padding: 7px 0;
+    /* height: 70px; */
+    padding: 20px 0;
     background: -moz-linear-gradient(#F8F594, #D5D533);
     background: -o-linear-gradient(#F8F594, #D5D533);
     background: -webkit-transition(#F8F594, #D5D533);
     background: linear-gradient(#F8F594, #D5D533);
+    display: flex;
+    flex-wrap: wrap;
 }
-
+/* 
 #navBar ul {
     list-style: none;
-}
-#navBar ul li {
-    float: left;
+} */
+#navBar a{
+    /* float: left; */
     border-right: 1px solid slateblue;
     padding: 0 30px;
-    height: 30px;
+    /* height: 30px; */
 }
-#navBar ul li:last-child {
+#navBar a:last-child {
     border: none
 }
-#navBar ul li a {
+#navBar a {
     font-size: 17px;
     text-decoration: none;
     color: slateblue;
@@ -87,14 +108,25 @@
     -ms-transition: font-size 0.3s ease;
     transition: font-size 0.3s ease;
 }
-#navBar ul li a:hover, #navBar ul li a.active {
+#navBar a:hover, #navBar a.active {
     font-size: 20px;
     font-weight: bold;
     color: slateblue;
 }
+/* small screens: vertical menu */
+@media screen and (max-width: 700px) {
+    #navBar {
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        align-content: center;
+    }
+    #navBar a {
+        border-right: none;
+    }
+}
+
 
 /* Introduction */
-
 #intro {
     /* border: 1px solid blue; */
     margin: 16px 0;
@@ -114,6 +146,16 @@
     color: #628F19;
     text-align: justify;
 }
+/* sidebars */
+.sidebars {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebarWrapper {
+    padding: 5px;
+    flex: 50%;
+}
+
 
 /* Left sidebar */
 
@@ -121,9 +163,9 @@
     border: 1px solid #BAF46F;
     padding: 10px 30px;
     border-radius: 20px;
-    width: 450px;
-    height: 500px;
-    float: left;
+    width: 100%;
+    height: 100%;
+    /* float: left; */
 }
 #leftSidebar h3 {
     color: slateblue;
@@ -154,7 +196,7 @@
 }
 .footer {
     background: linear-gradient(#F6F390, #D5D533);
-    margin-top: 15px;
+    margin-top: auto;
     height: 60px;
     padding: 10px 30px;
 }
@@ -167,9 +209,10 @@
     border: 1px solid #BAF46F;
     padding: 10px 30px;
     border-radius: 20px;
-    width: 450px;
-    height: 500px;
-    float: right;
+    width: 100%;
+    height: 100%;
+    /* float: right; */
+    
 }
 
 #rightSidebar h3 {
